@@ -1,0 +1,197 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Offers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            loadOffers();
+        };
+    </script>
+    <header>
+        <div class="header-container-1">
+            
+            <a href="index.html" class="logo-1" accesskey="h">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <span class="dark-text-1"><strong>Darek</strong></span>
+    
+            
+            <div class="header-right-1">
+                <a href="user-page.html" class="nav-link-1" accesskey="u">
+                    <img src="images/userIcon1.png" alt="User Page" class="icon-1">
+                    <strong>User's Page</strong>
+                </a>
+                <a href="seller'sdashboard.html" class="nav-link-1" accesskey="s">
+                    <img src="images/dashboard-icon.jpg" alt="Seller's Dashboard" class="icon-1">
+                    <strong>Seller's Dashboard</strong>
+                </a>
+                <a href="cart.html" class="nav-link-1" accesskey="r" id="cart-page-link">
+                    <img src="images/cart1.png" alt="Cart" class="icon-1">
+                    <strong>Cart</strong>
+                </a>
+
+                    <img src="images/catagory1.png" alt="Category" class="icon-1">
+                    <strong>Category:</strong>
+    
+                
+                <div class="button-container-1">
+                    <a href="Villa.html" class="button-link-1" accesskey="v">villa </a>
+                    <a href="apartment.html" class="button-link-1" accesskey="a">apartment</a>
+                    <a href="chalet.html" class="button-link-1" accesskey="c">chalet</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr style="border: 2px solid  #446049; width: 100%;" >
+
+    <nav class="breadcrumb-1">
+       <a href="index.html" accesskey="h">Home</a> &gt;
+       <a href="seller'sdashboard.html" accesskey="s">Seller Dashboard</a> &gt; 
+       <a href="EditOffersPage.html">Edit Offers</a>
+    </nav>
+
+    <hr style="border: 2px solid  #446049; width: 100%;" >
+
+    
+      <main>
+        <section class="All-available-offers">
+
+            <h1>Available offers</h1>
+
+            <div class="modify-offers">
+
+                <div class="The-Offer">
+                    <div class="checkboxes"> <input type="checkbox" value="offers"></div>
+                    <div class="offer-content">
+                        <div class="offer-image"><img src="images/offer1.jpg" alt="Offer 1"></div>
+                        <label><strong>Fun Package:</strong><br> a family-sized villa or chalet and enjoy a free night when you stay 5 nights or more.</label>
+                    </div>
+                </div>
+
+                <div class="The-Offer">
+                    <div class="checkboxes"> <input type="checkbox" value="offers"></div>                    
+                    <div class="offer-content">
+                        <div class="offer-image"><img src="images/offer2.jpg" alt="Offer 2"></div>
+                        <label><strong>Holiday Special:</strong><br> Celebrate the season with up to 25% off all properties during holiday periods!</label>
+                    </div>
+                </div>
+                <div class="The-Offer">
+                    <div class="checkboxes"> <input type="checkbox" value="offers"></div>
+                         <div class="offer-content">
+                        <div class="offer-image"><img src="images/offer3.jpg" alt="Offer 3"></div>
+                        <label><strong>Stay Longer, Pay Less:</strong><br> Book 7 nights or more and receive up to 20% off your total stay!</label>
+                    </div>
+                </div>
+                <div class="The-Offer">
+                    <div class="checkboxes"> <input type="checkbox" value="offers"></div>
+                        <div class="offer-content">
+                        <div class="offer-image"><img src="images/offer4.jpg" alt="Offer 4"></div>
+                        <label><strong>Last-Minute Deal:</strong><br> Need a quick escape? Get 10% off on bookings made within 48 hours of check-in!</label>
+                    </div>
+                </div>
+                <div class="The-Offer">
+                    <div class="checkboxes"> <input type="checkbox" value="offers"></div>
+                        <div class="offer-content">
+                        <div class="offer-image"><img src="images/offer5.jpg" alt="Offer 5"></div>
+                        <label><strong>Seasonal Discount:</strong><br> Enjoy special discounts on beachfront villas during summer or mountain chalets in winter, up to 30% off!</label>
+                    </div>
+                </div>
+                <div class="The-Offer">
+                    <div class="checkboxes"> <input type="checkbox" value="offers"></div>
+                        <div class="offer-content">
+                        <div class="offer-image"><img src="images/offer6.jpg" alt="Offer 6"></div>
+                        <label><strong>Weekend Getaway Special:</strong><br> Enjoy a 10% discount on weekend bookings (Friday to Sunday) for all properties!</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modify-offers"></div>
+
+        <br>
+        <br>
+        <div class="button-container">
+            <button class="button-EOP" onclick="checkboxes()">Delete selected offers</button>
+        </div>
+<br>
+<fieldset class="add-offer">
+    <legend><h2>Add new offer</h2></legend>
+    <form action="#" method="post" onsubmit="checkForms(event)" id="productForm">
+        <div class="Add-new-offer-form">
+        <div class="input-container">
+          <pre><label for="offer-name">   Offer name           </label></pre>
+            <input type="text" accesskey="n" name="offer-name" id="offer-name">
+        </div>
+        
+        <div class="input-container">
+           <pre><label for="offer-photo">  Upload photo       </label></pre>
+            <input type="file" accesskey="p" name="offer-photo" id="offer-photo">
+        </div>
+        
+        <div class="input-container">
+           <pre><label for="offer-description">   Offer description  </label></pre>
+            <textarea name="offer-description" accesskey="k" id="offer-description"></textarea>
+        </div>
+        
+        <br>
+        <br>
+
+        <div class="button-container">
+            <button type="submit" class="button-EOP">Add offer</button>
+        </div>
+    </div>
+    </form> 
+   <br>
+   <br> 
+</fieldset>
+    </main>
+<br>
+<footer>
+    <div class="footer-left-1">
+        <h4>Contact Us</h4>
+        <div class="contact-info-1">
+            <div class="contact-item-1">
+                <img src="images/phone1.png" alt="Phone Icon">
+                <span class="single-line-1">+996 58765 43210</span>
+            </div>
+            <div class="contact-item-1">
+                <img src="images/mail-icon.png" alt="Email Icon">
+                <span class="single-line-1">Darek@gmail.com</span>
+            </div>
+            <div class="contact-item-1">
+                <img src="images/location1.png" alt="Location Icon">
+                <span class="single-line-1">Riyadh, Saudi Arabia</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-center-1">
+        <a href="index.html">
+        <img src="images/logo1.png" alt="Logo" class="footer-logo-1">
+    </a>
+    </div>
+    
+    <div class="footer-right-1">
+        <p>Social media:</p>
+        <div class="social-icons-1">
+            
+            <img src="images/facebook1.png" alt="Facebook">
+            <img src="images/X1.png" alt="Twitter">
+            <img src="images/instagram1.png" alt="Instagram">
+            <img src="images/linkedin1.png" alt="LinkedIn">
+        </div>
+    </div>
+    
+    <div class="footer-bottom-1">
+        <p>&copy; 2024 Website. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

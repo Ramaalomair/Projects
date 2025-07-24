@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chalets </title>
+	<link rel="stylesheet" href="styles.css">
+ </head>
+ 
+<body>      
+<header>
+        <div class="header-container-1">
+            
+            <a href="index.html" class="logo-1" accesskey="l">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <span class="dark-text-1"><strong>Darek</strong></span>
+    
+            
+            <div class="header-right-1">
+                <a href="user-page.html" class="nav-link-1" accesskey="u">
+                    <img src="images/userIcon1.png" alt="User Page" class="icon-1">
+                    <strong>User's Page</strong>
+                </a>
+                <a href="seller'sdashboard.html" class="nav-link-1" accesskey="s">
+                    <img src="images/dashboard-icon.jpg" alt="Seller's Dashboard" class="icon-1">
+                    <strong>Seller's Dashboard</strong>
+                </a>
+                <a href="cart.html" class="nav-link-1" accesskey="r" id="cart-page-link">
+                    <img src="images/cart1.png" alt="Cart" class="icon-1">
+                    <strong>Cart</strong>
+                </a>
+
+                    <img src="images/catagory1.png" alt="Category" class="icon-1">
+                    <strong>Category:</strong>
+    
+                
+                <div class="button-container-1">
+                    <a href="Villa.html" class="button-link-1" accesskey="v">villa </a>
+                    <a href="apartment.html" class="button-link-1" accesskey="a">apartment</a>
+                    <a href="chalet.html" class="button-link-1" accesskey="c">chalet</a>
+                </div>
+            </div>
+        </div>
+    </header>	
+     <!--path of the page-->
+  
+     <hr style="border: 2px solid  #446049; width: 100%;" >
+
+     <nav class="breadcrumb-1">
+        <a href="index.html" accesskey="h">Home</a> &gt;
+		<a href="chalet.html">Chalet</a> 
+     </nav>
+
+     <hr style="border: 2px solid  #446049; width: 100%;" >
+	  
+<div class="button-catagoryPage">
+<label for="sort">Sort By:</label>
+  <select name="sort" id="sort">
+    <optgroup label="Name ">
+      <option value="a-z">a-z</option>
+      <option value="z-a">z-a</option>
+    </optgroup>
+    <optgroup label="price">
+      <option value="low-to-high">low to high</option>
+      <option value="high-to-low">high to low</option>
+    </optgroup>
+  </select>
+</div>
+
+ <h1>  Chalet </h1>
+  
+<br><br>
+
+
+<div id="category-cards">
+
+ 
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet1.jpeg" data-name="PalmTree Chalet" data-price="965">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet1.jpeg" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">PalmTree chalet 
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> Outdoor dining area,Free parking, pool ,Self check in.
+	    <div class = "price-catagoryPage"> <br> 965.00 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>  
+
+<div class="card-catagoryPage" data-image="images/offer4.jpg" data-name="Valley Chalet" data-price="765">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "images/offer4.jpg" alt = "chalet" width = 250 height = 150>
+      <div class="offer-box">10%</div>
+    </div>
+    <div class="category-catagoryPage"> Valley chalet 
+			<span class="stars-catagoryPage">★★★★★</span> </div>
+    <div class="heading-catagoryPage"> big pool , Exterior security cameras on property,Barbecue utensils.
+	    <div class = "price-catagoryPage"> <br> 
+            <span class="original-price">850 SAR</span> 
+            <span class="discounted-price">765 SAR</span>		</div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet2.JPG" data-name="larose Chalet" data-price="1199">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet2.JPG" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">larose Chalet
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> Mountain view,Private backyard – Fully fenced,Fire pit,Free street parking. 
+	    <div class = "price-catagoryPage"> <br> 1199 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>   
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet3.jpeg" data-name="Perla Chalet" data-price="555">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet3.jpeg" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">Perla chalet 
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> Outdoor shower , First aid kit , Free parking on premises, Pool.
+	    <div class = "price-catagoryPage"> <br> 555 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+      <div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 	
+
+ 
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet4.jpeg" data-name="Amalfi Chalet" data-price="965">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet4.jpeg" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage"> Amalfi chalet
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage">Sound system ,Indoor fireplace: electric,Sun loungers .
+	    <div class = "price-catagoryPage"> <br> 965 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;"> 
+      <div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>  
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet5.jpeg" data-name="Shehana Chalet" data-price="883">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet5.jpeg" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">Shehana chalet 
+			<span class="stars-catagoryPage">★★★★★</span> </div>
+    <div class="heading-catagoryPage"> Great for remote work , Garden view, Ethernet connection, Central heating.
+	    <div class = "price-catagoryPage"> <br> 883 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+      <div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet6.jpeg" data-name="Aura Chalet" data-price="2280" >
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet6.jpeg" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage"> Aura chalet
+			<span class="stars-catagoryPage">★★★★★</span> </div>
+    <div class="heading-catagoryPage">Outdoor dining area,Washer , kitchen ,Smoke alarm.
+	    <div class = "price-catagoryPage"> <br> 2280 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+      <div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>   
+
+<div class="card-catagoryPage" data-image="images/offer1.jpg" data-name="Oline Chalet" data-price="935">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "images/offer1.jpg" alt = "chalet" width = 250 height = 150>
+	   <div class="offer-box">15%</div>
+    </div>
+    <div class="category-catagoryPage">Oline chalet 
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> Fire pit,TV, Exterior security cameras on property.
+	    <div class = "price-catagoryPage"> <br>
+		    <span class="original-price">1100 SAR</span> 
+            <span class="discounted-price">935 SAR</span> </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;"> 
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 	
+ 
+
+<div class="card-catagoryPage" data-image="images/offer5.jpg"  data-name="Lunar Chalet" data-price="1050">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "images/offer5.jpg" alt = "chalet" width = 250 height = 150 >
+	   
+    </div>
+    <div class="category-catagoryPage">Lunar chalet
+			<span class="stars-catagoryPage">★★★☆☆</span> </div>
+    <div class="heading-catagoryPage"> Clothing storage ,fireplace ,Heating,Hot water.
+	    <div class = "price-catagoryPage"> <br> 1050 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>  
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet7.jpeg"  data-name="Auckland Chalet" data-price="2000">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet7.jpeg" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">Auckland chalet
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> Paid parking on premises ,Smart lock,Self check-in,Essentials .
+	    <div class = "price-catagoryPage"> <br> 2000 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;"> 
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet8.WEBP" data-name="Dublin Chalet" data-price="1500">
+     <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet8.WEBP" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">Dublin chalet 
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> Private outdoor pool - available all year, open 24 hours, lap pool , Garden view.
+	    <div class = "price-catagoryPage"> <br> 1500 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+      <div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>   
+
+<div class="card-catagoryPage" data-image="catgoryimages/chalet9.jpeg" data-name="Flower Chalet" data-price="1610">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/chalet9.jpeg" alt = "chalet" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">Flower chalet 
+			<span class="stars-catagoryPage">★★★☆☆</span> </div>
+    <div class="heading-catagoryPage"> AC - split type ductless system ,Heating, free WiFi, balcony .
+	    <div class = "price-catagoryPage"> <br> 1610 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left:10px; margin-right:10px;" width="20" height="20">
+        </div>
+		
+    </div>
+	
+</div> 	
+</div>
+
+</div>  
+
+<!-- "Add to Cart" Button -->
+<div class = "button-wrapper">
+<button  class="add-to-cart-button-catagoryPage"> Add all selected items to Cart</button>
+</div><br><br>
+<!-- Confirmation Message (hidden by default) -->
+<div id="confirmation-message" class="confirmation-message" style="display: none;">
+    Products added to cart!
+</div> 
+<!-- alert Message (hidden by default) -->
+<div id="alert-message" class="alert-message" style="display: none;">
+  Please select at least one product to add to the cart.
+</div>
+ <footer>
+            <div class="footer-left-1">
+                <h4>Contact Us</h4>
+                <div class="contact-info-1">
+                    <div class="contact-item-1">
+                        <img src="images/phone1.png" alt="Phone Icon">
+                        <span class="single-line-1">+996 58765 43210</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/mail-icon.png" alt="Email Icon">
+                        <span class="single-line-1">Darek@gmail.com</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/location1.png" alt="Location Icon">
+                        <span class="single-line-1">Riyadh, Saudi Arabia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-center-1">
+                <a href="index.html">
+                <img src="images/logo1.png" alt="Logo" class="footer-logo-1">
+            </a>
+            </div>
+            
+            <div class="footer-right-1">
+                <p>Social media:</p>
+                <div class="social-icons-1">
+                    
+                    <img src="images/facebook1.png" alt="Facebook">
+                    <img src="images/X1.png" alt="Twitter">
+                    <img src="images/instagram1.png" alt="Instagram">
+                    <img src="images/linkedin1.png" alt="LinkedIn">
+                </div>
+            </div>
+            
+            <div class="footer-bottom-1">
+                <p>&copy; 2024 Website. All rights reserved.</p>
+            </div>
+        </footer>
+  <script src="script.js"></script>
+
+   </body>
+</html>
+

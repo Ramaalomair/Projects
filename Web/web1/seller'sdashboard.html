@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            displayProducts();
+        };
+    </script>
+    <header>
+        <div class="header-container-1">
+            <a href="index.html" class="logo-1" accesskey="h">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <span class="dark-text-1"><strong>Darek</strong></span>
+
+            <div class="header-right-1">
+                <a href="user-page.html" class="nav-link-1" accesskey="u">
+                    <img src="images/userIcon1.png" alt="User Page" class="icon-1">
+                    <strong>User's Page</strong>
+                </a>
+                <a href="seller'sdashboard.html" class="nav-link-1" accesskey="s">
+                    <img src="images/dashboard-icon.jpg" alt="Seller's Dashboard" class="icon-1">
+                    <strong>Seller's Dashboard</strong>
+                </a>
+                <a href="cart.html" class="nav-link-1" accesskey="r" id="cart-page-link">
+                    <img src="images/cart1.png" alt="Cart" class="icon-1">
+                    <strong>Cart</strong>
+                </a>
+                <img src="images/catagory1.png" alt="Category" class="icon-1">
+                <strong>Category:</strong>
+                <div class="button-container-1">
+                    <a href="Villa.html" class="button-link-1" accesskey="v">Villa</a>
+                    <a href="apartment.html" class="button-link-1" accesskey="a">Apartment</a>
+                    <a href="chalet.html" class="button-link-1" accesskey="c">Chalet</a>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	<hr style="border: 2px solid  #446049; width: 100%;" >
+
+    <nav class="breadcrumb-1">
+       <a href="index.html" accesskey="h">Home</a> &gt;
+       <a href="seller'sdashboard.html" accesskey="s">Seller Dashboard</a> &gt; 
+    </nav>
+
+    <hr style="border: 2px solid  #446049; width: 100%;" >
+  
+    <h1>Seller's Dashboard</h1> 
+
+    <div id="product-container">
+        <p id="no-products-message" style="text-align: center; color: gray;">
+
+        </p>
+    </div>
+
+    <div class="image-links-sellerdashboard">
+        <div class="image-link-sellerdashboard">
+            <a href="AddProductPage.html">
+                <img src="Seller-image/editproprty.png" alt="icon">
+            </a>
+            <p> Add Product </p>
+        </div>
+        <div class="image-link-sellerdashboard">
+            <a href="EditOffersPage.html">
+                <img src="Seller-image/offerlink.png" alt="icon">
+            </a>
+            <p> Edit offers </p>
+        </div>
+    </div>
+
+    <hr style="border: 3px solid  #446049; width: 100%;" >
+
+    <footer>
+        <div class="footer-left-1">
+            <h4>Contact Us</h4>
+            <div class="contact-info-1">
+                <div class="contact-item-1">
+                    <img src="images/phone1.png" alt="Phone Icon">
+                    <span class="single-line-1">+996 58765 43210</span>
+                </div>
+                <div class="contact-item-1">
+                    <img src="images/mail-icon.png" alt="Email Icon">
+                    <span class="single-line-1">Darek@gmail.com</span>
+                </div>
+                <div class="contact-item-1">
+                    <img src="images/location1.png" alt="Location Icon">
+                    <span class="single-line-1">Riyadh, Saudi Arabia</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center-1">
+            <a href="index.html">
+                <img src="images/logo1.png" alt="Logo" class="footer-logo-1">
+            </a>
+        </div>
+        <div class="footer-right-1">
+            <p>Social media:</p>
+            <div class="social-icons-1">
+                <img src="images/facebook1.png" alt="Facebook">
+                <img src="images/X1.png" alt="Twitter">
+                <img src="images/instagram1.png" alt="Instagram">
+                <img src="images/linkedin1.png" alt="LinkedIn">
+            </div>
+        </div>
+        <div class="footer-bottom-1">
+            <p>&copy; 2024 Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

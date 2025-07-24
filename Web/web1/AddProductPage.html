@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <meta charset="UTF-8">
+         <title>Add a new product page</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script> 
+    </head>
+
+<body>
+    <header>
+        <div class="header-container-1">
+            
+            <a href="index.html" class="logo-1" accesskey="h">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <span class="dark-text-1"><strong>Darek</strong></span>
+    
+            
+            <div class="header-right-1">
+                <a href="user-page.html" class="nav-link-1" accesskey="u">
+                    <img src="images/userIcon1.png" alt="User Page" class="icon-1">
+                    <strong>User's Page</strong>
+                </a>
+                <a href="seller'sdashboard.html" class="nav-link-1" accesskey="s">
+                    <img src="images/dashboard-icon.jpg" alt="Seller's Dashboard" class="icon-1">
+                    <strong>Seller's Dashboard</strong>
+                </a>
+                <a href="cart.html" class="nav-link-1" accesskey="r" id="cart-page-link">
+                    <img src="images/cart1.png" alt="Cart" class="icon-1">
+                    <strong>Cart</strong>
+                </a>
+
+                    <img src="images/catagory1.png" alt="Category" class="icon-1">
+                    <strong>Category:</strong>
+    
+                
+                <div class="button-container-1">
+                    <a href="Villa.html" class="button-link-1" accesskey="v">villa </a>
+                    <a href="apartment.html" class="button-link-1" accesskey="a">apartment</a>
+                    <a href="chalet.html" class="button-link-1" accesskey="c">chalet</a>
+                </div>
+            </div>
+        </div>
+    </header>	
+ 
+    <hr style="border: 2px solid  #446049; width: 100%;" >
+
+    <nav class="breadcrumb-1">
+       <a href="index.html" accesskey="h">Home</a> &gt;
+       <a href="seller'sdashboard.html" accesskey="s">Seller Dashboard</a> &gt; 
+       <a href="AddProductPage.html">Add Product</a>
+    </nav>
+
+    <hr style="border: 2px solid  #446049; width: 100%;" >
+  
+  <main>
+    <section class="product-form">
+        <h1>Add a New Product</h1>
+        <div class="form-container">
+            <div class="product-image"> 
+                <img src="images/houses.jpg" alt="Product Image" class="product-image-placeholder">
+            </div>
+<br>
+
+            <form action="#" method="post" id ="productForm">
+                <div class="form-row">
+                    <label for="product-name">Name of Product</label>
+                    <input type="text" name="product-name" id="product-name" accesskey="n">
+                </div>
+            
+                <div class="form-row">
+                    <label for="product-photo">Upload Photo</label>
+                    <input type="file" name="product-photo" id="product-photo" accesskey="u">
+                </div>
+
+                <div class="form-row">
+                    <label for="product-price">Product Price</label>
+                    <input type="number" name="product-price" id= "product-price" accesskey="p">
+                </div>
+            
+                <div class="form-row">
+                    <label for="product-category">Product Category</label>
+                    <select name="product-category" id="product-category"  accesskey="t">
+                        <option value="">Select a category</option>
+                        <option value="villa">Villa</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="chalet">Chalet</option>
+                    </select>
+                </div>
+            
+                <div class="form-row">
+                    <label for="product-quantity">Product Quantity</label>
+                    <input type="number" name="product-quantity" id="product-quantity" accesskey="q">
+                </div>
+
+                <div class="form-row">
+                    <label for="product-description">Product Description</label>
+                    <textarea name="product-description" accesskey="k" id="product-description"></textarea>
+                </div>
+
+                <div class="button-container">
+                    <button type="button" class="button-APP" onclick="addProduct()">Add product</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-left-1">
+        <h4>Contact Us</h4>
+        <div class="contact-info-1">
+            <div class="contact-item-1">
+                <img src="images/phone1.png" alt="Phone Icon">
+                <span class="single-line-1">+996 58765 43210</span>
+            </div>
+            <div class="contact-item-1">
+                <img src="images/mail-icon.png" alt="Email Icon">
+                <span class="single-line-1">Darek@gmail.com</span>
+            </div>
+            <div class="contact-item-1">
+                <img src="images/location1.png" alt="Location Icon">
+                <span class="single-line-1">Riyadh, Saudi Arabia</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-center-1">
+        <a href="index.html">
+        <img src="images/logo1.png" alt="Logo" class="footer-logo-1">
+    </a>
+    </div>
+    
+    <div class="footer-right-1">
+        <p>Social media:</p>
+        <div class="social-icons-1">
+            
+            <img src="images/facebook1.png" alt="Facebook">
+            <img src="images/X1.png" alt="Twitter">
+            <img src="images/instagram1.png" alt="Instagram">
+            <img src="images/linkedin1.png" alt="LinkedIn">
+        </div>
+    </div>
+    
+    <div class="footer-bottom-1">
+        <p>&copy; 2024 Website. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html> 

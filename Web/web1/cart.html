@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	
+    <title>Cart</title>
+	
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-container-1">
+            
+            <a href="index.html" class="logo-1" accesskey="l">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <span class="dark-text-1"><strong>Darek</strong></span>
+    
+            
+            <div class="header-right-1">
+                <a href="user-page.html" class="nav-link-1" accesskey="u">
+                    <img src="images/userIcon1.png" alt="User Page" class="icon-1">
+                    <strong>User's Page</strong>
+                </a>
+                <a href="seller'sdashboard.html" class="nav-link-1" accesskey="s">
+                    <img src="images/dashboard-icon.jpg" alt="Seller's Dashboard" class="icon-1">
+                    <strong>Seller's Dashboard</strong>
+                </a>
+                <a href="cart.html" class="nav-link-1" accesskey="r" id="cart-page-link" >
+                    <img src="images/cart1.png" alt="Cart" class="icon-1">
+                    <strong>Cart</strong>
+                </a>
+
+
+                    <img src="images/catagory1.png" alt="Category" class="icon-1">
+                    <strong>Category:</strong>
+    
+                
+                <div class="button-container-1">
+                    <a href="villa.html" class="button-link-1" accesskey="v">villa </a>
+                    <a href="apartment.html" class="button-link-1" accesskey="a">apartment</a>
+                    <a href="chalet.html" class="button-link-1" accesskey="c">chalet</a>
+                </div>
+            </div>
+        </div>
+    </header>	
+
+    <hr style="border: 2px solid #446049; width: 100%;">
+
+        <!-- Navigation-->
+    <nav class="breadcrumb-cartPage">
+        <a href="index.html" class="breadcrumb-cartPage" accesskey="h">Home</a> &gt; 
+        <a href="cart.html" class="breadcrumb-cartPage">Cart</a>
+    </nav>
+
+    <hr style="border: 2px solid #446049; width: 100%;">
+
+    <h1>
+         Cart
+    </h1>
+
+    <h2 id="cart-message">  </h2>
+	
+    <div class="container-cartPage" id="cart-display">
+    <!-- Left Section: Cart Table -->
+    <div class="left-cartPage">
+        <table class="table-cartPage">
+            <thead>      
+            </thead>
+            <tbody id="cartList" class="orders-cartPage"> 
+                <!-- Cart items will be dynamically added here by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Empty Cart Button -->
+        <button class="empty-cart-btn-cartPage" id="empty-cart-btn">Empty Cart</button>
+    </div> <!-- cart left close -->
+
+    <!-- Right side: Order Summary -->
+    <div class="cart-right-cartPage" id="orderSummary">
+        <h2>Order Summary</h2>
+		<p id="discountAlert"> </p>
+        <div class="voucher-container-cartPage">
+            <input type="text" class="voucher-input-cartPage" id="discountCode" placeholder="Discount Voucher" accesskey="i">
+            <button  value="Apply" class="voucher-btn-cartPage" id="applyDiscountBtn"> Apply </button>
+        </div>
+        <div class="items-list-cartPage">
+            <!-- Order summary will be dynamically added here by JavaScript -->
+        </div>
+        <button onclick="handleCheckout()" class="checkout-btn-cartPage">
+            <img src="cart-history-images/lock.png" alt="Lock img" class="lock-icon-cartPage">
+            CheckOut
+			
+        </button>
+
+        <div class="payment-method-container-cartPage">
+            <span class="payment-method-text-cartPage">Payment method:</span>
+            <img src="cart-history-images/visa.png" alt="Visa" class="payment-icon-cartPage">
+            <img src="cart-history-images/mastercard.png" alt="Mastercard" class="payment-icon-cartPage">
+            <img src="cart-history-images/stcpay.png" alt="stcpay" class="payment-icon-cartPage">
+            <img src="cart-history-images/applepay.png" alt="Apple Pay" class="payment-icon-cartPage">
+        </div>
+    </div> <!-- cart right close -->
+</div> <!-- cart-container close -->
+
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-section-cartPage">
+        <h2 style="font-size: 20px; font-family: Roboto, sans-serif;">Recommended for You</h2>
+        <div class="slideshow-container-cartPage">
+            <!-- Slide 1 -->
+            <div class="slide-cartPage">
+                <a href="villa.html">
+                    <img src="catgoryimages/villa4.jpeg" alt="Product img" class="slideshow-image-cartPage" >
+                </a>
+				<div>
+                <p class="product-title-cartPage"> Haven Villa</p>
+                <p class="stars-cartPage">★★★★☆</p>
+                <p class="product-price-cartPage">2750 SAR</p>
+                <button class="add-to-order-btn-cartPage" onclick="addToCart1('catgoryimages/villa4.jpeg','Haven Villa', 1, 2750)">Add to your order</button>
+				</div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide-cartPage">
+                <a href="villa.html">
+                    <img src="catgoryimages/villa1.jpeg" alt="Product img" class="slideshow-image-cartPage" width=50 height=200>
+                </a>
+				<div>
+                <p class="product-title-cartPage">Villa Doplex</p>
+                <p class="stars-cartPage">★★★★☆</p>
+                <p class="product-price-cartPage">1500 SAR</p>
+                <button class="add-to-order-btn-cartPage" onclick="addToCart1('catgoryimages/villa1.jpeg','Villa Doplex', 1, 1500)">Add to your order</button>
+				</div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide-cartPage">
+                <a href="chalet.html">
+                    <img src="images/offer1.jpg" alt="Product img" class="slideshow-image-cartPage" width=50 height=200>
+                </a>
+				<div>
+                <p class="product-title-cartPage">Perla Chalet</p>
+                <p class="stars-cartPage">★★★★☆</p>
+                <p class="product-price-cartPage">1100 SAR</p>
+                <button class="add-to-order-btn-cartPage" onclick="addToCart1('images/offer1.jpg','Perla Chalet', 1, 1100)">Add to your order</button>
+				</div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide-cartPage">
+                <a href="villa.html">
+                    <img src="catgoryimages/townHouse.jpeg" alt="Product img" class="slideshow-image-cartPage" width=50 height=200>
+                </a>
+				<div>
+                <p class="product-title-cartPage">Town House</p>
+                <p class="stars-cartPage">★★★★☆</p>
+                <p class="product-price-cartPage">899 SAR</p>
+                <button class="add-to-order-btn-cartPage" onclick="addToCart1('catgoryimages/townHouse.jpeg','Town House', 1, 899)">Add to your order</button>
+				</div>
+            </div>
+ 
+            <!-- Slide 5 -->
+            <div class="slide-cartPage">
+                <a href="apartment.html">
+                    <img src="catgoryimages/apartment3.jpeg" alt="Product img" class="slideshow-image-cartPage" width=50 height=200>
+                </a>
+				<div>
+                <p class="product-title-cartPage">Modern nest </p>
+                <p class="stars-cartPage">★★★★☆</p>
+                <p class="product-price-cartPage">958 SAR</p>
+                <button class="add-to-order-btn-cartPage" onclick="addToCart1('catgoryimages/apartment3.jpeg','Modern Nest', 1, 958)">Add to your order</button>
+				</div>
+            </div>
+
+        </div> <!--slideshow container close-->
+    </div> <!--slideshow-section close-->
+
+    <hr style="border: 3px solid  #446049; width: 100%;" >
+
+        <footer>
+            <div class="footer-left-1">
+                <h4>Contact Us</h4>
+                <div class="contact-info-1">
+                    <div class="contact-item-1">
+                        <img src="images/phone1.png" alt="Phone Icon">
+                        <span class="single-line-1">+996 58765 43210</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/mail-icon.png" alt="Email Icon">
+                        <span class="single-line-1">Darek@gmail.com</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/location1.png" alt="Location Icon">
+                        <span class="single-line-1">Riyadh, Saudi Arabia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-center-1">
+                <a href="index.html">
+                <img src="images/logo1.png" alt="Logo" class="footer-logo-1">
+            </a>
+            </div>
+            
+            <div class="footer-right-1">
+                <p>Social media:</p>
+                <div class="social-icons-1">
+                    
+                    <img src="images/facebook1.png" alt="Facebook">
+                    <img src="images/X1.png" alt="Twitter">
+                    <img src="images/instagram1.png" alt="Instagram">
+                    <img src="images/linkedin1.png" alt="LinkedIn">
+                </div>
+            </div>
+            
+            <div class="footer-bottom-1">
+                <p>&copy; 2024 Website. All rights reserved.</p>
+            </div>
+        </footer>
+		<script src="script.js"></script>
+		
+
+</body>
+</html>

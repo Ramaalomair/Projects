@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+     <script src="script.js" defer></script>
+    
+</head>
+<body>
+   
+ <header>
+        <div class="header-container-1">
+            
+            <a href="index.html" class="logo-1" accesskey="H">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <span class="dark-text-1"><strong>Darek</strong></span>
+    
+            
+            <div class="header-right-1">
+                <a href="user-page.html" class="nav-link-1" accesskey="u">
+                    <img src="images/userIcon1.png" alt="User Page" class="icon-1">
+                    <strong>User's Page</strong>
+                </a>
+                <a href="seller'sdashboard.html" class="nav-link-1" accesskey="s">
+                    <img src="images/dashboard-icon.jpg" alt="Seller's Dashboard" class="icon-1">
+                    <strong>Seller's Dashboard</strong>
+                </a>
+                <a href="cart.html" class="nav-link-1" accesskey="r" id="cart-page-link">
+                    <img src="images/cart1.png" alt="Cart" class="icon-1">
+                    <strong>Cart</strong>
+                </a>
+
+                    <img src="images/catagory1.png" alt="Category" class="icon-1">
+                    <strong>Category:</strong>
+    
+                
+                <div class="button-container-1">
+                    <a href="Villa.html" class="button-link-1" accesskey="v">villa </a>
+                    <a href="apartment.html" class="button-link-1" accesskey="a">apartment</a>
+                    <a href="chalet.html" class="button-link-1" accesskey="c">chalet</a>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <!--path of the page-->
+  
+  <hr style="border: 2px solid  #446049; width: 100%;" >
+
+     <nav class="breadcrumb-1">
+        <a href="index.html">Home</a> &gt; 
+		<a href="user-page.html">User's Page</a> &gt; 
+		<a href="productEval.html">Product Evaluaiton</a>
+
+     </nav>
+
+      <hr style="border: 2px solid  #446049; width: 100%;" >
+         
+           <main class="productEval">
+           <h1>Product Evaluation</h1>
+           <div class="container-productEval">
+
+    <div  id="selecting-productEval">
+        <!-- Product Dropdown -->
+          <div class="product-selection-section-productEval">
+            <div class="productEvaluation-section-productEval">
+             <label for="product-select-productEval">Select a product to review:</label>
+              <select name="product" id="product-select-productEval">
+                <option value="">-- previous orders --</option>
+                <option value="product1">Booking #1326885796</option>
+                <option value="product3">Booking #1922289798</option>
+            </select>
+             
+              <div class="current-product-productEval">
+               <h3>Your current orders</h3>
+                <img src="images/vision.jpg" alt="villa" class="product-image-productEval" id="product-image">
+                  <p id="product-description"> This serene villa offers the perfect blend of rustic charm and modern comfort. Surrounded by rolling vineyards and olive groves, 
+                      it features spacious rooms with traditional terracotta floors, wood-beamed ceilings, and antique furnishings.</p>
+                  <p id="product-price"> 
+                      Price: 6000S.R per night<pre> 
+Location: Riyadh, Al Aqiq </pre>
+Guests: 8 guests | 4 bedrooms | 4 bathrooms
+                 </div>
+             
+          
+             <!-- Rating Section -->
+        <div class="rating-section-productEval">
+           <label id="Rate-text-productEval">Rate the product</label>
+             <form action="#" method="post">
+             <div class="stars-productEval">
+                 <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">★</label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★</label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★</label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">★</label>
+            </div>
+        </form>
+
+          
+            <div id="reviwe-productEval">   
+         <label>How was the experience:</label>
+                <textarea id="experience-productEval" name="experience" rows="4" placeholder="Share your experience here..."></textarea>
+                </div>
+                
+                
+              </div>
+            </div>
+        </div>
+
+        
+        <!-- Submit Button -->
+        <button class="submit-btn-productEval" type="submit">Submit</button>
+    </div>
+           </div>
+        </main>
+     
+         
+        
+
+
+        <footer>
+            <div class="footer-left-1">
+                <h4>Contact Us</h4>
+                <div class="contact-info-1">
+                    <div class="contact-item-1">
+                        <img src="images/phone1.png" alt="Phone Icon">
+                        <span class="single-line-1">+996 58765 43210</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/mail-icon.png" alt="Email Icon">
+                        <span class="single-line-1">Darek@gmail.com</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/location1.png" alt="Location Icon">
+                        <span class="single-line-1">Riyadh, Saudi Arabia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-center-1">
+                <a href="index.html">
+                <img src="images/logo1.png" alt="Logo" class="footer-logo-1">
+            </a>
+            </div>
+            
+            <div class="footer-right-1">
+                <p>Social media:</p>
+                <div class="social-icons-1">
+                    
+                    <img src="images/facebook1.png" alt="Facebook">
+                    <img src="images/X1.png" alt="Twitter">
+                    <img src="images/instagram1.png" alt="Instagram">
+                    <img src="images/linkedin1.png" alt="LinkedIn">
+                </div>
+            </div>
+            
+            <div class="footer-bottom-1">
+                <p>&copy; 2024 Website. All rights reserved.</p>
+            </div>
+        </footer>
+    
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+    const products = {
+        product1: {
+            image: "images/vision.jpg",
+            description: "This serene villa offers the perfect blend of rustic charm and modern comfort. Surrounded by rolling vineyards and olive groves,it features spacious rooms with traditional terracotta floors, wood-beamed ceilings, and antique furnishings.",
+            price: "6000S.R per night"
+        },
+        product2: {
+            image: "images/offer2.jpg",
+            description: "estled along pristine white sands, this luxury villa offers breathtaking ocean views and contemporary elegance. Floor-to-ceiling windows flood the space with natural light.",
+            price: "5000S.R per night"
+        }
+    };
+
+    const productSelect = document.getElementById("product-select-productEval");
+    const productImage = document.getElementById("product-image");
+    const productDescription = document.getElementById("product-description");
+    const productPrice = document.getElementById("product-price");
+
+    productSelect.addEventListener("change", function () {
+        const selectedProduct = productSelect.value;
+
+        if (products[selectedProduct]) {
+            productImage.src = products[selectedProduct].image; // Update the image source
+            productDescription.textContent = products[selectedProduct].description;
+            productPrice.textContent = `Price: ${products[selectedProduct].price}`;
+        } else {
+            productImage.src = ""; // Clear the image source
+            productDescription.textContent = "";
+            productPrice.textContent = "";
+        }
+    });
+});
+        
+    </script>
+     
+     
+</body>
+</html>

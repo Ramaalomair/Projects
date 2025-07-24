@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Booking History </title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-container-1">
+            
+            <a href="index.html" class="logo-1" accesskey="l">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <span class="dark-text-1"><strong>Darek</strong></span>
+    
+            
+            <div class="header-right-1">
+                <a href="user-page.html" class="nav-link-1" accesskey="u">
+                    <img src="images/userIcon1.png" alt="User Page" class="icon-1">
+                    <strong>User's Page</strong>
+                </a>
+                <a href="seller'sdashboard.html" class="nav-link-1" accesskey="s">
+                    <img src="images/dashboard-icon.jpg" alt="Seller's Dashboard" class="icon-1">
+                    <strong>Seller's Dashboard</strong>
+                </a>
+                <a href="cart.html" class="nav-link-1" accesskey="r" id="cart-page-link" >
+                    <img src="images/cart1.png" alt="Cart" class="icon-1">
+                    <strong>Cart</strong>
+                </a>
+
+                    <img src="images/catagory1.png" alt="Category" class="icon-1">
+                    <strong>Category:</strong>
+    
+                
+                <div class="button-container-1">
+                    <a href="villa.html" class="button-link-1" accesskey="v">villa </a>
+                    <a href="apartment.html" class="button-link-1" accesskey="a">apartment</a>
+                    <a href="chalet.html" class="button-link-1" accesskey="c">chalet</a>
+                </div>
+            </div>
+        </div>
+    </header>	
+
+    <!-- navigation-->
+<hr style="border: 2px solid  #446049; width: 100%;" >
+
+    <nav class="breadcrumb-bh">
+     <a  class="breadcrumb-bh" href="index.html" accesskey="h"> Home </a> &gt; 
+     <a class="breadcrumb-bh" href="user-page.html" accesskey="u">User's Page</a>&gt;
+     <a class="breadcrumb-bh" href="booking-history.html" >Booking History</a> 
+    </nav>
+
+  <hr style="border: 2px solid  #446049; width: 100%;" >
+
+
+
+          <!-- Main content -->
+<main class="booking-history-main-bh">
+
+    <h1>     Booking History  </h1>
+
+    <!-- Tabs for  booking navigation -->
+    <div class="tabs-bh">
+    <a href="#" class="active-bh" onclick="filterBookings('all')">All Bookings</a>
+    <a href="#" onclick="filterBookings('upcoming')">Upcoming</a>
+    <a href="#" onclick="filterBookings('completed')">Completed</a>
+    <a href="#" onclick="filterBookings('cancelled')">Cancelled</a>
+    </div>
+
+
+    <!-- Booking Box 1 -->
+<div class="booking-box-bh" data-status="upcoming">
+    <div style="display: flex; align-items: top;">
+    <div class="upcoming-circle-bh"></div>
+    <div class="upcoming-text-bh">Upcoming</div>
+	</div>
+
+    <div class="info-section-bh">
+        <div class="info-box-bh">
+            <div class="image-booking-history-bh">
+                <img src="catgoryimages/apartment7.jpeg" alt="Product Image">
+            </div>
+            <div class="details-bh">
+                <h4 style="font-size:18px;">Booking #1437629177</h4>
+                <p><strong>Date:</strong> <span>24/1/2025 - 27/1/2025</span></p>
+                <p><strong>Booked on:</strong> <span>28/09/2024 10:44:20</span></p>
+                <p><strong>Total:</strong> <span>2874 SAR</span></p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container-booking-bh">
+        <!-- Trigger Button for Order 1 -->
+        <a href="#orderDetailsModal1-bh" class="button-booking-bh">View Booking Details</a>
+
+        <!-- Modal Structure for Order 1 -->
+        <div class="modal-bh" id="orderDetailsModal1-bh">
+            <div class="modal-content-bh">
+                <!-- Close button at top left -->
+                <a href="booking-history.html" class="close-bh">&times;</a> 
+
+                <!-- Collage Section  -->
+                <div class="collage-section-bh">
+                    <div class="image-collage-bh">
+                        <img src="catgoryimages/apartment1.jpeg" alt="Product image" class="collage-image-bh">
+                        <img src="catgoryimages/apartment2.jpeg" alt="Product image" class="collage-image-bh">
+                        <img src="catgoryimages/apartment3.jpeg" alt="Product image" class="collage-image-bh">
+                    </div>
+                </div>
+
+                <!-- Title and Booking Details Section -->
+                <div class="booking-details-bh">
+                    <h2 class="booking-title-bh">Modern nest</h2>
+                    <p><strong>Booking #:</strong> 1437629177</p>
+                    <p><strong>Date:</strong> 24/1/2025 - 27/1/2025</p>
+                    <p><strong>Booked on:</strong> 28/09/2024 10:44:20</p>
+                    <hr>
+                    <p><strong>Payment :</strong></p>
+                    <p>958 SAR per night x 3 = 2874 SAR</p>
+                    <p>Discount: = 0 SAR</p>
+                    <p><strong>TOTAL:</strong> 2874 SAR</p>
+                    <p><small>Payment method: Apple Pay</small></p>
+                    <hr>
+                    <p><strong>Guests:</strong> 3 Adults</p>
+                    <p><strong>Location:</strong> Almalqa district, Aldahna streets, 144255</p>
+                    <p><img src="cart-history-images/location1.jpg" alt="map img" width=100 height=100></p>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="addToCart1('catgoryimages/apartment7.jpeg', 'Modern Nest', 3, 958)" class="button-booking-bh">Re-Book</button>
+       
+    </div>
+</div>
+
+<!-- Booking Box 2 -->
+<div class="booking-box-bh" data-status="completed">
+<div  style="display: flex; align-items: top;">
+    <div class="completed-circle-bh"></div>
+    <div class="completed-text-bh">Completed</div>
+</div>
+    <div class="info-section-bh">
+        <div class="info-box-bh">
+            <div class="image-booking-history-bh">
+                <img src="images/offer3.jpg" alt="Product Image">
+            </div>
+            <div class="details-bh">
+                <h4 style="font-size:18px;">Booking #1326885796</h4>
+                <p><strong>Date:</strong> <span>1/09/2024 - 3/09/2024</span></p>
+                <p><strong>Booked on:</strong> <span>2/08/2024 8:13:10</span></p>
+                <p><strong>Total:</strong> <span>2498 SAR</span></p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container-booking-bh">
+        <!-- Trigger Button for Order 2 -->
+        <a href="#orderDetailsModal2-bh" class="button-booking-bh">View Booking Details</a>
+
+        <!-- Modal Structure for Order 2 -->
+        <div class="modal-bh" id="orderDetailsModal2-bh">
+            <div class="modal-content-bh">
+                <!-- Close button at top left -->
+                <a href="booking-history.html" class="close-bh">&times;</a> 
+
+                <!-- Collage Section (Centered at the top) -->
+                <div class="collage-section-bh">
+                    <div class="image-collage-bh">
+                        <img src="catgoryimages/villa1.jpeg" alt="Product image" class="collage-image-bh">
+                        <img src="catgoryimages/villa2.jpeg" alt="Product image" class="collage-image-bh">
+                        <img src="catgoryimages/villa3.jpeg" alt="Product image" class="collage-image-bh">
+                    </div>
+                </div>
+
+                <!-- Title and Booking Details Section -->
+                <div class="booking-details-bh">
+                    <h2 class="booking-title-bh">Balli Villa</h2>
+                    <p><strong>Booking #:</strong> 1326885796</p>
+                    <p><strong>Date:</strong> 1/09/2024 - 3/09/2024</p>
+                    <p><strong>Booked on:</strong> 2/08/2024 8:13:10</p>
+                    <hr>
+                    <p><strong>Payment :</strong></p>
+                    <p>1299 SAR per night x 2 = 2598 SAR</p>
+                    <p>Discount: = 100 SAR</p>
+                    <p><strong>TOTAL:</strong> 2498 SAR</p>
+                    <p><small>Payment method: Visa Card</small></p>
+                    <hr>
+                    <p><strong>Guests:</strong> 2 Adults</p>
+                    <p><strong>Location:</strong> Hitten district, alkbeer streets, 123479</p>
+                    <p><img src="cart-history-images/location2.jpg" alt="map img" width=100 height=100></p>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="addToCart1('images/offer3.jpg', 'Balli Villa', 2, 1299)" class="button-booking-bh">Re-Book</button>
+
+        
+    </div>
+</div>
+
+<!-- Booking Box 3 -->
+<div class="booking-box-bh" data-status="completed">
+<div style="display: flex; align-items: top;">
+    <div class="completed-circle-bh"></div>
+    <div class="completed-text-bh">Completed</div>
+</div>
+
+    <div class="info-section-bh">
+        <div class="info-box-bh">
+            <div class="image-booking-history-bh">
+                <img src="images/offer5.jpg" alt="Product Image">
+            </div>
+            <div class="details-bh">
+                <h4 style="font-size:18px;">Booking #1355620715</h4>
+                <p><strong>Date:</strong> <span>13/6/2024 - 17/6/2024</span></p>
+                <p><strong>Booked on:</strong> <span>5/5/2024 3:20:27</span></p>
+                <p><strong>Total:</strong> <span>3700 SAR</span></p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container-booking-bh">
+        <!-- Trigger Button for Order 3 -->
+        <a href="#orderDetailsModal3-bh" class="button-booking-bh">View Booking Details</a>
+
+        <!-- Modal Structure for Order 3 -->
+        <div class="modal-bh" id="orderDetailsModal3-bh">
+            <div class="modal-content-bh">
+                <!-- Close button at top left -->
+                <a href="booking-history.html" class="close-bh">&times;</a> <!-- Close button -->
+
+                <!-- Collage Section (Centered at the top) -->
+                <div class="collage-section-bh">
+                    <div class="image-collage-bh">
+                        <img src="catgoryimages/chalet8.webp" alt="Product image" class="collage-image-bh">
+                        <img src="catgoryimages/chalet6.jpeg" alt="Product image" class="collage-image-bh">
+                        <img src="catgoryimages/chalet7.jpeg" alt="Product image" class="collage-image-bh">
+                    </div>
+                </div>
+
+                <!-- Title and Booking Details Section -->
+                <div class="booking-details-bh">
+                    <h2 class="booking-title-bh">PalmTree Chalet</h2>
+                    <p><strong>Booking #:</strong> 1355620715</p>
+                    <p><strong>Date:</strong> 13/6/2024 - 17/6/2024</p>
+                    <p><strong>Booked on:</strong> 5/5/2024 3:20:27</p>
+                    <hr>
+                    <p><strong>Payment :</strong></p>
+                    <p>1050 SAR per night x 4 = 4200 SAR</p>
+                    <p>Discount: = 500 SAR</p>
+                    <p><strong>TOTAL:</strong> 3700 SAR</p>
+                    <p><small>Payment method: Cash</small></p>
+                    <hr>
+                    <p><strong>Guests:</strong> 4 Adults</p>
+                    <p><strong>Location:</strong> Alkhuzama district, almadar streets, 222479</p>
+                    <p><img src="cart-history-images/location3.jpg" alt="map img" width=100 height=100></p>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="addToCart1('images/offer5.jpg', 'PalmTree Chalet', 4, 1050)" class="button-booking-bh">Re-Book</button>
+        
+    </div>
+</div>
+
+
+<!-- Booking Box 4 -->
+<div class="booking-box-bh" data-status="cancelled">
+<div style="display: flex; align-items: top;">
+    <div class="cancelled-circle-bh"></div>
+    <div class="cancelled-text-bh">Cancelled</div>
+</div>
+    <div class="info-section-bh">
+        <div class="info-box-bh">
+            <div class="image-booking-history-bh">
+                <img src="catgoryimages/townHouse.jpeg" alt="Product Image">
+            </div>
+            <div class="details-bh">
+                <h4 style="font-size:18px;">Booking #1922289798</h4>
+                <p><strong>Date:</strong> <span>14/1/2024 - 19/1/2024</span></p>
+                <p><strong>Booked on:</strong> <span>2/12/2023 9:50:15</span></p>
+                <p><strong>Total:</strong> <span>4195 SAR</span></p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container-booking-bh">
+        <!-- Trigger Button for Order 4 -->
+        <a href="#orderDetailsModal4-bh" class="button-booking-bh">View Booking Details</a>
+
+        <!-- Modal Structure for Order 4 -->
+        <div class="modal-bh" id="orderDetailsModal4-bh">
+            <div class="modal-content-bh">
+                <!-- Close button at top left -->
+                <a href="booking-history.html" class="close-bh">&times;</a> <!-- Close button -->
+
+                <!-- Collage Section (Centered at the top) -->
+                <div class="collage-section-bh">
+                    <div class="image-collage-bh">
+                        <img src="catgoryimages/townhouse2.jpeg" alt="Product image" class="collage-image-bh">
+                        <img src="catgoryimages/townhouse3.jpeg" alt="Product image" class="collage-image-bh">
+                        <img src="catgoryimages/townhouse.jpeg" alt="Product image" class="collage-image-bh">
+                    </div>
+                </div>
+
+                <!-- Title and Booking Details Section -->
+                <div class="booking-details-bh">
+                    <h2 class="booking-title-bh">Town House</h2>
+                    <p><strong>Booking #:</strong> 1922289798</p>
+                    <p><strong>Date:</strong> 14/1/2024 - 19/1/2024</p>
+                    <p><strong>Booked on:</strong> 2/12/2023 9:50:15</p>
+                    <hr>
+                    <p><strong>Payment :</strong></p>
+                    <p>899 SAR per night x 5 = 4495 SAR</p>
+                    <p>Discount: = 300 SAR</p>
+                    <p><strong>TOTAL:</strong> 4195 SAR</p>
+                    <p><small>Payment method: Cash</small></p>
+                    <hr>
+                    <p><strong>Guests:</strong> 4 Adults</p>
+                    <p><strong>Location:</strong> Al-Nada district, alroyal streets, 222469</p>
+                    <p><img src="cart-history-images/location4.jpg" alt="map img" width=100 height=100></p>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="addToCart1('catgoryimages/townHouse.jpeg', 'Town House', 5, 899)" class="button-booking-bh">Re-Book</button>
+       
+    </div>
+</div>
+</main>
+
+
+
+    <hr style="border: 3px solid  #446049; width: 100%;" >
+
+        <footer>
+            <div class="footer-left-1">
+                <h4>Contact Us</h4>
+                <div class="contact-info-1">
+                    <div class="contact-item-1">
+                        <img src="images/phone1.png" alt="Phone Icon">
+                        <span class="single-line-1">+996 58765 43210</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/mail-icon.png" alt="Email Icon">
+                        <span class="single-line-1">Darek@gmail.com</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/location1.png" alt="Location Icon">
+                        <span class="single-line-1">Riyadh, Saudi Arabia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-center-1">
+                <a href="index.html">
+                <img src="images/logo1.png" alt="Logo" class="footer-logo-1">
+            </a>
+            </div>
+            
+            <div class="footer-right-1">
+                <p>Social media:</p>
+                <div class="social-icons-1">
+                    
+                    <img src="images/facebook1.png" alt="Facebook">
+                    <img src="images/X1.png" alt="Twitter">
+                    <img src="images/instagram1.png" alt="Instagram">
+                    <img src="images/linkedin1.png" alt="LinkedIn">
+                </div>
+            </div>
+            
+            <div class="footer-bottom-1">
+                <p>&copy; 2024 Website. All rights reserved.</p>
+            </div>
+        </footer>
+		<script src="script.js"></script>
+</body>
+</html>

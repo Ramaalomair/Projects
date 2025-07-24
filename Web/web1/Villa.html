@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Villas </title>
+    <link rel="stylesheet" href="styles.css">
+
+
+  </head>
+ 
+<body> 
+     
+<header>
+        <div class="header-container-1">
+            
+            <a href="index.html" class="logo-1" accesskey="l">
+                <img src="images/logo1.png" alt="Logo">
+            </a>
+            <span class="dark-text-1"><strong>Darek</strong></span>
+    
+            
+            <div class="header-right-1">
+                <a href="user-page.html" class="nav-link-1" accesskey="u">
+                    <img src="images/userIcon1.png" alt="User Page" class="icon-1">
+                    <strong>User's Page</strong>
+                </a>
+                <a href="seller'sdashboard.html" class="nav-link-1" accesskey="s">
+                    <img src="images/dashboard-icon.jpg" alt="Seller's Dashboard" class="icon-1">
+                    <strong>Seller's Dashboard</strong>
+                </a>
+                <a href="cart.html" class="nav-link-1" accesskey="r" id="cart-page-link">
+                    <img src="images/cart1.png" alt="Cart" class="icon-1">
+                    <strong>Cart</strong>
+                </a>
+
+                    <img src="images/catagory1.png" alt="Category" class="icon-1">
+                    <strong>Category:</strong>
+    
+                
+                <div class="button-container-1">
+                    <a href="Villa.html" class="button-link-1" accesskey="v">villa </a>
+                    <a href="apartment.html" class="button-link-1" accesskey="a">apartment</a>
+                    <a href="chalet.html" class="button-link-1" accesskey="c">chalet</a>
+                </div>
+            </div>
+        </div>
+    </header>	
+     <!--path of the page-->
+  
+     <hr style="border: 2px solid  #446049; width: 100%;" >
+
+     <nav class="breadcrumb-1">
+        <a href="index.html" accesskey="h">Home</a> &gt;
+	    <a href="Villa.html">Villa</a> 
+     </nav>
+
+     <hr style="border: 2px solid  #446049; width: 100%;" >
+	 
+	
+<div class="button-catagoryPage">
+<label for="sort">Sort By:</label>
+  <select name="sort" id="sort">
+    <optgroup label="Name ">
+      <option value="a-z">a-z</option>
+      <option value="z-a">z-a</option>
+    </optgroup>
+    <optgroup label="price">
+      <option value="low-to-high">low to high</option>
+      <option value="high-to-low">high to low</option>
+    </optgroup>
+  </select>
+</div>
+	
+ <h1>   Villa  </h1>
+ 
+
+<br><br>
+
+
+<div id="category-cards">
+
+
+<div class="card-catagoryPage"  data-image="images/offer3.jpg" data-name="Balli Villa" data-price="1040">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "images/offer3.jpg" alt = "Villa" > 
+	   	<div class="offer-box">20%</div>
+    </div>
+    <div class="category-catagoryPage"> balli villa 
+			<span class="stars-catagoryPage">★★★☆☆</span> </div>
+    <div class="heading-catagoryPage"> pool with a view , air-conditioned accommodation with a balcony, free WiFi.
+	    <div class = "price-catagoryPage"> <br> 
+		<span class="original-price">1299 SAR</span> 
+            <span class="discounted-price">1040 SAR</span>
+		</div>
+		       
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">		
+		<div class="card-button-catagoryPage">
+            <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+		
+  </div>
+		
+    </div>
+	
+</div>  
+
+<div class="card-catagoryPage" data-image="catgoryimages/villa1.jpeg" data-name="Villa Doplex" data-price="1500">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/villa1.jpeg" alt = "Villa" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage"> villa Doplex 
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> A bedroom ,living room , bathroom , small service corner with a mini-fridge.
+	    <div class = "price-catagoryPage"> <br> 1500 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+            <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>		
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 
+
+<div class="card-catagoryPage" data-image="catgoryimages/townHouse.jpeg" data-name="Town House" data-price="899">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/townHouse.jpeg" alt = "Villa" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">  Town House 
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> free WiFi, 3 bedrooms, 2 bathrooms,beautiful neighbors. 
+	    <div class = "price-catagoryPage"> <br> 899 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">		<div class="card-button-catagoryPage">
+            <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>   
+
+<div class="card-catagoryPage" data-image="catgoryimages/villa2.jpeg" data-name="Golden villa" data-price="1598">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/villa2.jpeg" alt = "Villa" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage"> Golden villa 
+			<span class="stars-catagoryPage">★★★☆☆</span> </div>
+    <div class="heading-catagoryPage"> living room with view , parking for 2 cars and big pool.
+	    <div class = "price-catagoryPage"> <br> 1598 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">		<div class="card-button-catagoryPage">
+            <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>        
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 	
+
+ 
+
+
+<div class="card-catagoryPage" data-image="catgoryimages/villa3.jpeg" data-name="Delmar Villa" data-price="1088">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/villa3.jpeg" alt = "Villa" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage"> Delmar villa
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> 3 bedrooms with balcony ,1 living room, 3 bathrooms, 1 kitchen .
+	    <div class = "price-catagoryPage"> <br> 1088 SAR </div>
+        <div class="date-catagoryPage"> No of nights: 
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>  
+
+<div class="card-catagoryPage" data-image="images/villa.jpg" data-name="Elegance Villa" data-price="2077">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "images/villa.jpg" alt = "Villa" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">elegance villa 
+			<span class="stars-catagoryPage">★★★☆☆</span> </div>
+    <div class="heading-catagoryPage"> car parking , 2 bedrooms, 2 bathrooms and free WiFi.
+	    <div class = "price-catagoryPage"> <br> 2077 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">		
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 
+
+<div class="card-catagoryPage" data-image="catgoryimages/villa5.jpeg" data-name="Oasis Villa" data-price="2030">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/villa5.jpeg" alt = "Villa" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage"> Oasis villa 
+			<span class="stars-catagoryPage">★★☆☆☆</span> </div>
+    <div class="heading-catagoryPage">large windows , close to the city, free WiFi,private parking.
+	    <div class = "price-catagoryPage"> <br> 2030 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+	    <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>   
+
+<div class="card-catagoryPage" data-image="images/offer6.jpg" data-name="Peaceful Villa" data-price="1790">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "images/offer6.jpg" alt = "Villa" width = 250 height = 150>
+	   <div class="offer-box">10%</div>
+    </div>
+    <div class="category-catagoryPage">peaceful villa 
+			<span class="stars-catagoryPage">★★★☆☆</span> </div>
+    <div class="heading-catagoryPage"> pool with mountain view, garden, BBQ place.
+	    <div class = "price-catagoryPage"> <br>
+		   <span class="original-price">1990 SAR</span> 
+            <span class="discounted-price">1790 SAR</span> </div>
+        <div class="date-catagoryPage"> No of nights:
+		<input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image"  alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 	
+
+ 
+ 
+
+<div class="card-catagoryPage" data-image="catgoryimages/townHouse3.jpeg" data-name="Dolce Villa" data-price="2550">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/townHouse3.jpeg" alt = "Villa" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">Dolce Villa
+			<span class="stars-catagoryPage">★★★★★</span> </div>
+    <div class="heading-catagoryPage"> 2 bedrooms , 1 living room , 2 bathrooms, shared parking.
+	    <div class = "price-catagoryPage"> <br> 2550 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+        <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">		
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>  
+
+<div class="card-catagoryPage" data-image="images/offer2.jpg" data-name="Sunset Villa" data-price="1857">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "images/offer2.jpg" alt = "Villa" width = 250 height = 150>
+	   <div class="offer-box">25%</div>
+    </div>
+    <div class="category-catagoryPage"> sunset villa 
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> garden , 4 bedrooms, 2 bathrooms , 1 kitchen with coffee corner.
+	    <div class = "price-catagoryPage"> <br> 
+		<span class="original-price">2476 SAR</span> 
+            <span class="discounted-price">1857 SAR</span> </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">		
+		<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 
+
+<div class="card-catagoryPage" data-image="catgoryimages/villa4.jpeg" data-name="Haven Villa" data-price="2750">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/villa4.jpeg" alt = "Villa" width =250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage">haven villa 
+			<span class="stars-catagoryPage">★★★★☆</span> </div>
+    <div class="heading-catagoryPage"> Air conditioning , soundproofing, private kitchen.
+	    <div class = "price-catagoryPage"> <br> 2750 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">				<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png" class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div>   
+
+<div class="card-catagoryPage"  data-image="catgoryimages/townHouse4.jpeg" data-name="Classic Villa" data-price="2000">
+    <input type="checkbox" class="product-checkbox">
+    <div class="card-image-catagoryPage"> 
+	   <img src= "catgoryimages/townHouse4.jpeg" alt = "Villa" width = 250 height = 150>
+	   
+    </div>
+    <div class="category-catagoryPage"> classic villa 
+			<span class="stars-catagoryPage">★★★★★</span> </div>
+    <div class="heading-catagoryPage"> 1 big bedroom with large window , 2 bathrooms, free WiFi, 1 living room .
+	    <div class = "price-catagoryPage"> <br> 2000 SAR </div>
+        <div class="date-catagoryPage"> No of nights:
+         <input type="number" id="quantity-Delmar-villa" class="quantity-input" value="1" min="1" style="width: 5em; margin-right: 15em;">				<div class="card-button-catagoryPage">
+	      <input type="image" src="images/cart1.png"  class="add-to-cart-image" alt="Book Now" style="margin-left: 0.625em; margin-right: 0.625em;" width=20 height=20>
+        </div>
+		
+  </div>
+		
+    </div>
+	
+</div> 	
+
+  
+</div>
+
+<!-- "Add to Cart" Button -->
+<div class = "button-wrapper">
+<button  class="add-to-cart-button-catagoryPage"> Add all selected items to Cart</button>
+</div>
+<br><br>
+<!-- Confirmation Message (hidden by default) -->
+<div id="confirmation-message" class="confirmation-message" style="display: none;">
+    Products added to cart!
+</div>
+
+<!-- alert Message (hidden by default) -->
+<div id="alert-message" class="alert-message" style="display: none;">
+  Please select at least one product to add to the cart.
+</div>
+
+
+
+
+
+ <footer>
+            <div class="footer-left-1">
+                <h4>Contact Us</h4>
+                <div class="contact-info-1">
+                    <div class="contact-item-1">
+                        <img src="images/phone1.png" alt="Phone Icon">
+                        <span class="single-line-1">+996 58765 43210</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/mail-icon.png" alt="Email Icon">
+                        <span class="single-line-1">Darek@gmail.com</span>
+                    </div>
+                    <div class="contact-item-1">
+                        <img src="images/location1.png" alt="Location Icon">
+                        <span class="single-line-1">Riyadh, Saudi Arabia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-center-1">
+                <a href="index.html">
+                <img src="images/logo1.png" alt="Logo" class="footer-logo-1">
+            </a>
+            </div>
+            
+            <div class="footer-right-1">
+                <p>Social media:</p>
+                <div class="social-icons-1">
+                    
+                    <img src="images/facebook1.png" alt="Facebook">
+                    <img src="images/X1.png" alt="Twitter">
+                    <img src="images/instagram1.png" alt="Instagram">
+                    <img src="images/linkedin1.png" alt="LinkedIn">
+                </div>
+            </div>
+            
+            <div class="footer-bottom-1">
+                <p>&copy; 2024 Website. All rights reserved.</p>
+            </div>
+        </footer>
+ <script src="script.js"></script>
+
+
+   </body>
+</html>
+
