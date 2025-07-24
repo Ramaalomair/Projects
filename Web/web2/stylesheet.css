@@ -1,0 +1,877 @@
+
+/*start Heder Styling*/
+header {
+  display: flex;  
+  align-items: center;  
+  justify-content: center;    
+  background-color: white;  
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  
+  padding: 20px 40px;  
+margin-bottom: 20px;
+}
+
+.logo {
+  max-height: 80px;  
+  width: 100px;  
+}
+
+#webName {
+  color:  #d27979;              
+  font-size: 22px;             
+  font-weight: bold;           
+  text-align: center;          
+  flex-grow: 1;                
+  text-align: center;          
+font-family:Garamond;
+text-shadow: 2px 2px 5px silver;
+}
+/*end Heder Styling*/
+
+
+/*start Footer Styling*/
+footer {
+  background-color: white;
+  color: white;
+  padding: 20px 20px; 
+  text-align: center;
+  margin-top: 40px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info p {
+  font-size: 14px;
+  color: #bdc3c7;
+  margin: 5px 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #3498db;
+}
+
+/* Contact Info Styling */
+.contact-info {
+  display: flex; 
+  gap: 20px; /* Space between each contact item */
+  color: #bdc3c7;
+  padding-top: 0; 
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item .icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.contact-item span {
+  font-size: 16px;
+}
+/*end Footer Styling*/
+
+/*start home page*/
+#image-container-Homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+  margin-top: 50px;
+ }
+
+ #image-container-Homepage img {
+  width: 100%;
+  max-width: 450px; 
+  height: auto;
+  border-radius: 15px; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+ }
+
+ #image-container-Homepage img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); 
+ }
+
+ #clinic-info-Homepage {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-top: 20px;
+ }
+
+ #clinic-info-Homepage h1  {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+text-shadow: 2px 2px 5px silver;
+color:#725b52;
+ }
+
+ #clinic-info-Homepage p {
+  font-size: 18px;
+  color: #a08781; /*#7f8c8d*/
+text-shadow: 2px 2px 5px silver;
+ }
+
+ #home-container-Homepage {
+  text-align: center;
+  margin-top: 40px;
+ }
+
+ #home-container-Homepage #login-btn-Homepage {
+  background-color: #d27979;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+ }
+
+ #home-container-Homepage #login-btn-Homepage:hover {
+  background-color: #df9f9f;
+ }
+
+ #home-container-Homepage #signup-link-Homepage {
+  margin-top: 20px;
+  font-size: 16px;
+  color:#725b52;
+  }
+
+ #home-container-Homepage #signup-link-Homepage a {
+  color: #d27979;
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+ #home-container-Homepage #signup-link-Homepage a:hover {
+  color: #df9f9f;
+  }
+/*end home page*/
+
+/*start login page*/
+#loginpage{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  }
+
+ #login-container-loginpage {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 40%;
+  width: 100%;
+  text-align: center;
+  color: #131d54;
+  }	
+
+.h2-loginpage {
+  text-shadow: 2px 2px 5px silver;
+  margin-bottom: 50px;
+color:#725b52;
+  }
+ 
+ .form-group-loginpage {
+  margin-bottom: 15px;
+  text-align: left;
+  }
+
+  .label-loginpage{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+color:#725b52;
+  }
+
+  .input-loginpage,#login-btn-loginpage{
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+color:#a08781;
+  }
+
+  .input-loginpage{
+ width: 90%;
+ }
+ 
+ .input-loginpage::placeholder{
+ color:#a08781;	
+ } 
+ 
+ #login-btn-loginpage{
+ width: 95%;
+ }
+
+ .role-loginpage{
+ width: 5%;
+ }
+
+ #login-btn-loginpage {
+ background-color: #d27979;
+ color: white;
+ border: none;
+ cursor: pointer;
+ }
+
+#login-btn-loginpage:hover {
+background-color: #df9f9f;
+}
+/*end login page*/
+
+/*start signup page*/
+#signuppage{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  }
+
+  .signup-container-signuppage{
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 40%;
+  width: 100%;
+  text-align: center;
+  color: #131d54;
+ }
+ 
+  .h2-signuppage,.h3-signuppage{
+  text-shadow: 2px 2px 5px silver;
+  margin-bottom: 50px;
+color:#725b52;
+  }
+
+ .role-selection-signuppage{
+  margin-bottom: 15px;
+ text-align: center;
+ }
+
+  .label-signuppage{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:#725b52;
+  }
+
+  .input-signuppage,.select-signuppage,.signup-btn-signuppage{
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color:#a08781;
+  }
+
+ .input-signuppage{
+ width: 90%;
+ }
+ 
+ .input-signuppage::placeholder{
+ color:#a08781;	
+ }
+ 
+ .select-signuppage,.signup-btn-signuppage{ 
+ width: 95%;
+ }
+
+ .role-signuppage{
+ width: 5%;
+ }
+
+ .signup-btn-signuppage {
+ background-color: #d27979;
+ color: white;
+ border: none;
+ cursor: pointer;
+ }
+
+.signup-btn-signuppage:hover {
+background-color: #df9f9f;
+}   
+
+ .h3-signuppage[for="role-signuppage"]{
+ margin-bottom:20px;	
+ }
+
+ #patient-form-signuppage, #doctor-form-signuppage {
+ margin-bottom: 15px;
+ text-align: left;
+ }
+
+ .hidden {
+ display: none;
+ }
+/*end signup page*/
+
+/*start patient page*/
+#headerContainer-patientPage {
+display: flex;
+justify-content: space-between; /* Ensures logo on the left and sign-out on the right */
+align-items: center; /* Vertically centers the items */
+padding: 7px 20px; /* Adjusted padding for better alignment */
+width: 100%;
+box-sizing: border-box; /* Ensures padding doesn’t affect the width */
+}
+
+#signOutLink-patientPage {
+color: #d27979;
+text-decoration: none;
+font-size: 25px;
+}
+
+#signOutLink-patientPage:hover {
+text-decoration: underline;
+}
+#patientName-patien-page{
+margin-left: 50px; 
+color:#725b52; 
+font-weight: bold;
+}
+#welcomeNote-patient-page{
+	color:#a08781;
+	font-size:15px;
+	text-align:center;
+    margin-bottom:25px;
+    font-weight: bold;
+	text-shadow: 2px 2px 5px silver;
+}
+/* Section Styling */
+section {
+  margin: 20px; /* Adds space around each section */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Styling for Patient Information Section */
+.patient-info-patientPage {
+  margin-bottom: 20px; /* Add space below the patient info section */
+    font-size: 17px;
+  
+
+}
+.patient-info-patientPage h2{
+    color:#a08781;
+    font-size:25px;
+    margin-bottom:25px;
+    font-weight: bold;
+	text-shadow: 2px 2px 5px silver;
+}
+#appointment-header-patientpage{
+display:flex;
+  color: #d27979;
+  
+
+}
+#appintment-patient-page{
+	color:#a08781;
+    font-size:25px;
+    margin-bottom:25px;
+    font-weight: bold;
+	text-shadow: 2px 2px 5px silver;
+}
+
+/* Styling for Appointment Section */
+.appointments-patientPage {
+  margin-top: 20px; /* Optional: Add space between sections */
+}
+
+/* Table Styling */
+#appointmentsTable-patientPage {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#appointmentsTable-patientPage th,
+#appointmentsTable-patientPage td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+#appointmentsTable-patientPage th {
+      font-size: 19px;
+
+}
+
+#appointmentsTable-patientPage th {
+  background-color: #f2f2f2;
+}
+/* Styling for the Table Body */
+#appointmentsTableBody-patientPage tr {
+  background-color: #fff; /* White background for rows */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for table rows */
+#appointmentsTableBody-patientPage tr:hover {
+  background-color: #f2f2f2; /* Light gray background when hovering */
+}
+/* Styling for each table data cell */
+#appointmentsTableBody-patientPage td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 17px;
+}
+
+/* Doctor’s Photo Styling */
+#appointmentsTableBody-patientPage td img {
+  width: 80px; /* Set the width of the image */
+  height: 60px; /* Set the height of the image */
+  border-radius: 10%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image fits within the circle */
+}
+
+/* Doctor’s Photo Styling */
+#appointmentsTableBody-patientPage td img {
+  width: 80px; /* Increase width of the image */
+  height: 80px; /* Increase height of the image */
+  object-fit: cover; /* Ensure the image fits properly */
+}
+
+
+
+/* Cancel Link Styling */
+.cancel-link {
+  color: #ff0000; /* Red color for cancel link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Styling the first column (Date) */
+#appointmentsTableBody-patientPage td:first-child {
+  font-weight: bold;
+  color: #333; /* Dark text for the date */
+}
+
+/* Styling the second column (Time) */
+#appointmentsTableBody-patientPage td:nth-child(2) {
+  font-style: italic; /* Italicized time */
+  color: #666; /* Gray text for time */
+}
+
+/* Styling for 'Cancel' column */
+#appointmentsTableBody-patientPage td:last-child {
+  font-weight: bold;
+  text-align: center;
+}
+
+.cancel-link:hover {
+  text-decoration: underline; /* Underline effect when hovering over cancel link */
+}
+
+
+/* Book Appointment Link */
+.book-appointment-link-patientPage {
+  display: inline-block;
+  background-color: #d27979;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+margin-top:40px;
+  position: absolute; /* Positioning it absolutely */
+  right: 46px; /* 20px from the right of the page */
+}
+
+.book-appointment-link-patientPage:hover {
+  background-color: #df9f9f;
+}
+
+
+
+/*end patient page*/
+
+/*start appointment booking page*/
+
+/* Main Container */
+#appointment-booking-bookingPage {
+padding: 20px;
+max-width: 800px;
+margin: auto;
+background-color: white;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+}
+
+#appointment-header-bookingPage {
+color: #d27979;
+}
+/* Specialty Form Styling */
+#specialtyForm-bookingPage {
+background-color: #fff;
+padding: 20px;
+margin-top: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+}
+
+#specialtyForm-bookingPage label {
+display: block;
+margin: 10px 0 5px;
+font-weight: bold;
+}
+#specialtyForm-bookingPage select {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+#specialtyForm-bookingPage button {
+background-color: #d27979;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#specialtyForm-bookingPage button:hover {
+background-color: #df9f9f;
+}
+
+/* Appointment Form Styling */
+#appointmentForm-bookingPage {
+background-color: #fff;
+padding: 20px;
+margin-top: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+}
+
+#appointmentForm-bookingPage label {
+display: block;
+margin: 10px 0 5px;
+font-weight: bold;
+}
+
+#appointmentForm-bookingPage select,
+#appointmentForm-bookingPage input[type="date"],
+#appointmentForm-bookingPage input[type="time"],
+#appointmentForm-bookingPage textarea {
+width: 99%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+#appointmentForm-bookingPage button {
+background-color: #d27979;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#appointmentForm-bookingPage button:hover {
+background-color: #df9f9f;
+}
+
+#appointmentForm-bookingPage textarea {
+height: 100px;
+resize: none;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+#appointment-booking-bookingPage {
+  padding: 15px;
+  max-width: 100%;
+}
+}
+
+/*end appointment booking page*/
+
+
+/*the start of Doctor page*/
+
+
+
+ .doctor-homepage #doctor-welcome h1{
+  margin-left: 50px;
+  
+    font-weight: bold;
+
+}
+ .doctor-homepage h2{
+  color:#a08781;
+  font-size:25px;
+    margin-bottom:25px;
+    font-weight: bold;
+	text-shadow: 2px 2px 5px silver;
+}
+  .doctor-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-family: Arial, sans-serif;
+  }
+
+  #doctorP-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+  }
+
+  .doctor-table {
+    width: 40%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+
+  .doctor-table th, .doctor-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .doctor-table th {
+    background-color:#f2f2f2;
+    color: #725b52;
+    font-size: 18px;
+    text-align: center;
+
+  }
+
+  .doctor-table tr:nth-child(even) {
+    background-color: white;
+  }
+
+  .doctor-table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  #Din {
+    text-align: center;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+  }
+
+  h4 {
+    color:#a08781;
+    text-shadow: 2px 2px 5px silver;
+    margin-bottom: 50px;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+#headerDoctor th{
+  background-color:#f2f2f2;
+}
+
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  color:Black;
+  }
+
+  th {
+    background-color: white;
+    font-weight: bold;
+  }
+
+ 
+tr:hover{
+background-color: #f2f2f2;
+}
+
+ 
+
+  .pending {
+    color: black;
+    font-weight: bold;
+  }
+
+  .confirm-btn {
+    background-color: #d27979;
+    border: none;
+    padding: 3px 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .confirm-btn:hover {
+    background-color:#d27979;
+  }
+
+  .prescribe-link {
+    color:#d27979;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .prescribe-link:hover {
+    text-decoration: underline;
+  color:lightpink;
+  }
+
+/*The end of Doctor page*/
+
+/*The start of PrescribeMedicationPage */
+  /* Centering the form */
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .form-container {
+    border: 1px solid white;
+    padding:10px;
+    margin-top: 50px;
+    width:600px;
+    height: 650px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-container h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+    
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+  }
+
+  .Patientname-prescribeMedication, 
+  input[type="number"] {
+    width: 30%;
+    padding: 3px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    align-items: right;
+  }
+  
+ /* input[type="text"], 
+  input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left:30px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+   align-items:right;
+  }*/
+
+  .gender-group {
+    display: flex;
+    align-items:left;
+    gap:0px;
+    margin-top:5px;
+  }
+
+  input[type="radio"] {
+    margin-right:20px;
+   align-items: center;
+  }
+
+  
+
+  .medications-group {
+margin-top: 12px;
+display: flex;
+flex-direction:row;
+gap: 5px;
+
+}
+
+.medications-group label {
+display: inline-flex;
+align-items: center;
+gap: 5px;
+}
+
+
+  input[type="submit"] {
+    color:white;
+    margin-top: 40px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    background-color: #d27979; 
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  input[type="submit"]:hover {
+    background-color:#d27979 ;
+  }
+
+  /*The end of prescribeMedication*/
+  

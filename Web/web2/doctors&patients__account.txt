@@ -1,0 +1,17 @@
+doctors account:
+   
+   email                             password
+
+1- majed_Alnasser@gmail.com          maj111213
+2- mohammed_ahmeday@gmail.com        moh123456
+3- sara_Alotaibi@gmail.com           sara678910
+
+-------------------------------------------------
+
+patients account:
+   
+   email                             password
+
+1- jood@gmail.com                    jood456789
+2- leen@gmail.com                    leen345678
+3- nada@gmail.com                    nada234567
