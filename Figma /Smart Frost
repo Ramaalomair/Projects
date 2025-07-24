@@ -1,0 +1,43 @@
+❄️ Smart Frost – Smart Fridge Mobile App (UI Design in Figma)
+Smart Frost is a mobile app UI design for a smart fridge system, created using Figma as part of a user experience course in university . The app is designed to help users manage their fridge remotely, stay informed about their food inventory, and reduce waste through smarter tracking and recommendations.
+
+📱 Project Overview
+Smart Frost transforms the way users interact with their refrigerators by providing a clean, user-friendly interface that connects to a smart fridge. The design focuses on convenience, nutrition awareness, and food management, all accessible from a mobile device.
+
+🧠 Key Features
+Live Inventory Tracking
+View a list of items currently in the fridge, along with quantities and categories (e.g., dairy, meat, vegetables).
+
+Expiration Alerts
+Get notified of items nearing their expiration dates to reduce food waste.
+
+Nutritional Insights
+View nutritional values of the food items for healthier decision-making.
+
+Proper Storage Tips
+Learn how to store different types of food correctly to maximize freshness and safety.
+
+Smart Recipe Suggestions
+Automatically generate recipes based on available ingredients in the fridge.
+
+Order Management
+Users can create a shopping list or send direct orders for missing or low-stock items.
+
+🎯 Purpose
+The goal of Smart Frost is to:
+
+Help users make informed food choices.
+
+Prevent food spoilage and waste.
+
+Encourage healthier eating habits.
+
+Add convenience to meal planning and grocery management.
+
+🛠️ Tools Used
+Figma for UI/UX design and prototyping.
+
+Designed with a focus on mobile-first experience, intuitive navigation, and clean aesthetics.
+
+📸 Preview
+https://www.figma.com/proto/JhFdEEXJz3aXXTGMH0PjPb/SmartFrost-
