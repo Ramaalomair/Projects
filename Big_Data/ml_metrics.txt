@@ -1,0 +1,118 @@
+======================================================================
+ BASELINE MODEL: Mean Salary Prediction
+======================================================================
+  Mean salary (train): $96321.14
+  Baseline RMSE       : $62016.02
+  Baseline MAE        : $44405.09
+  Baseline R²         : -0.0005
+======================================================================
+ BASELINE COMPLETE
+======================================================================
+======================================================================
+ MODEL 1: Random Forest Regressor — Full Evaluation
+======================================================================
+
+----- RF TRAINING METRICS -----
+  Train RMSE          : $50433.45
+  Train MAE           : $34966.39
+  Train R²            : 0.3097
+
+----- RF TEST METRICS -----
+  Test  RMSE          : $53986.54
+  Test  MAE           : $35998.73
+  Test  R²            : 0.2418
+
+----- RF OVERFITTING CHECK -----
+  RMSE gap (test-train) / train: 7.0%
+  OK: Generalisation gap is within acceptable range
+
+----- RF vs BASELINE -----
+  Baseline RMSE : $62016.02
+  RF Test  RMSE : $53986.54
+  RMSE improvement over baseline: 12.9%
+
+----- RF TOP FEATURE IMPORTANCES -----
+  Feature[2978] : 0.512045
+  Feature[2979] : 0.061973
+  Feature[299] : 0.057597
+  Feature[1468] : 0.052761
+  Feature[0] : 0.036770
+======================================================================
+ MODEL 1 EVALUATION COMPLETE
+======================================================================
+======================================================================
+ MODEL 2: Gradient Boosted Trees (GBT) — Full Evaluation
+======================================================================
+
+----- GBT TRAINING METRICS -----
+  Train RMSE          : $48543.65
+  Train MAE           : $33090.29
+  Train R²            : 0.3604
+
+----- GBT TEST METRICS -----
+  Test  RMSE          : $52944.25
+  Test  MAE           : $34507.14
+  Test  R²            : 0.2708
+
+----- GBT OVERFITTING CHECK -----
+  RMSE gap (test-train) / train: 9.1%
+  OK: Generalisation gap is within acceptable range
+
+----- GBT vs BASELINE -----
+  Baseline RMSE  : $62016.02
+  GBT Test  RMSE : $52944.25
+  RMSE improvement over baseline: 14.6%
+
+----- GBT TOP FEATURE IMPORTANCES -----
+  Feature[2978] : 0.198225
+  Feature[1] : 0.045040
+  Feature[303] : 0.043051
+  Feature[0] : 0.042387
+  Feature[2979] : 0.029717
+======================================================================
+ MODEL 2 EVALUATION COMPLETE
+======================================================================
+======================================================================
+ FINAL MODEL COMPARISON SUMMARY
+======================================================================
+
+Model                RMSE (test)     MAE (test)      R² (test) 
+----------------------------------------------------------------------
+Baseline (mean)      $62016          $44405          -0.0005   
+Random Forest        $53987          $35999          0.2418    
+GBT                  $52944          $34507          0.2708    
+----------------------------------------------------------------------
+  WINNER: GBT outperforms Random Forest on test RMSE
+======================================================================
+ EVALUATION COMPLETE
+======================================================================
+======================================================================
+ INTERPRETATION
+======================================================================
+----- FEATURE IMPORTANCE ANALYSIS -----
+  The most important features across the models are:
+  Feature[2978]
+  Feature[2979]
+  Feature[299]
+  Feature[1468]
+  Feature[0]
+
+  Although feature indices are shown numerically due to vectorization,
+  they represent encoded variables such as job title, location, and work type,
+  which were found to be the most influential in predicting salary.
+
+----- WHAT THE MODEL HAS LEARNED -----
+  Salary is influenced by job title, location, work type, and experience level.
+
+----- MODEL PERFORMANCE ANALYSIS -----
+  GBT is the best model with:
+    RMSE = $52944
+    MAE  = $34507
+    R²   = 0.2708
+
+----- FINAL INTERPRETATION -----
+  The model learns useful patterns but is suitable for estimation, not exact prediction.
+
+======================================================================
+ INTERPRETATION COMPLETE
+======================================================================
